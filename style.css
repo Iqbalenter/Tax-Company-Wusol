@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+nav img {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.nav-list {
+    font-weight: 1000;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 200px 0 40px;
+}
+
+.list {
+    margin-right: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.list:hover {
+    transform: scale(1.1);
+}
+
+.list a {
+    text-decoration: none;
+    color: #000;
+}
+
+.lang {
+    font-weight: 1000;
+    margin: 30px 100px 0 0;
+}
+
+
+nav button {
+    background-color: #c07744;
+    color: #fff;
+    border-style: none;
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    margin: 20px auto;
+    float: right;
+    cursor: pointer;
+    box-shadow: 0px 8px 5px -3px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 0px 8px 5px -3px rgba(0,0,0,0.46);
+    -moz-box-shadow: 0px 8px 5px -3px rgba(0,0,0,0.46);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav button:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    justify-content: center;
+    text-align: center;
+}
+
+.content img {
+    
+}
+
+.content h4 {
+    display: inline-block;
+    text-align: left;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+.consulting-btn {
+    background-color: #04352e;
+    border-style: none;
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.consulting-btn:hover {
+    transform: scale(1.1);
+}
+
+.testi-btn {
+    background-color: #c07744;
+    border-style: none;
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 1000;
+    color: #3c4734;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testi-btn:hover {
+    transform: scale(1.1);
+}
+
+.content h5 {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.color-h5 {
+    color: #c37b4a;
+}
+
+.content h3 {
+    font-size: 13px;
+    color: #9e9f9e;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.discount {
+    border-radius: 8px;
+    margin: 0 410px;
+    background-color: #e1e1e1;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.discount:hover {
+    transform: scale(1.1);
+}
+
+.discount img {
+    margin-bottom: 10px;
+    width: 20px;
+}
+
+.discount p {
+    font-size: 13px;
+    margin-top: 8px;
+    font-weight: 1000;
+}
+
+.content p {
+    font-weight: 1000;
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    nav {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav img {
+        width: 20%;
+    }
+
+    .nav-list {
+        margin: 0 auto;
+        font-size: 0.8em;
+    }
+
+    .lang {
+        font-weight: 1000;
+        margin: 30px auto;
+        font-size: 0.9em;
+    }
+
+    nav button {
+        font-size: 10px;
+        width: 10%;
+        float: right;
+        margin: 20px auto;
+    }
+
+    .content {
+    }
+
+    .discount {
+        width: 55%;
+        margin: auto;
+    }
+
+}
