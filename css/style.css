@@ -67,13 +67,24 @@ nav button:hover {
     transform: scale(1.1);
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
 .content {
     justify-content: center;
     text-align: center;
-}
-
-.content img {
-    
 }
 
 .content h4 {
@@ -162,7 +173,6 @@ nav button:hover {
     font-weight: 1000;
 }
 
-
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     nav {
         width: 100%;
@@ -191,12 +201,118 @@ nav button:hover {
         margin: 20px auto;
     }
 
-    .content {
-    }
-
     .discount {
         width: 55%;
         margin: auto;
     }
 
+}
+
+@media screen and (max-width:480px) {
+
+    .hamburger {
+        display: block;
+        float: right;
+        margin-right: 20px;
+        margin-top: 25px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    nav {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav img {
+        width: 30%;
+    }
+
+    .nav-list {
+        margin: 0 auto;
+        position: fixed;
+        left: -160%;
+        top: 80px;
+        flex-direction: column;
+        background-color: #c07744;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .list {
+        margin: 10px 0 10px 0;
+    }
+
+    .list a {
+        color: #fff;
+    }
+
+    .lang {
+        display: none;
+    }
+
+    nav button {
+        width: 30%;
+        float: right;
+        margin: 20px auto;
+    }
+
+    .content {
+        margin-bottom: 0;
+    }
+
+    .content img {
+        width: 100%;
+    }
+    
+    .content h4 {
+        font-size: 0.8em;
+    }
+
+    .consulting-btn {
+        width: 40%;
+        height: 40px;
+        margin-right: 20px;
+    }
+
+    .testi-btn {
+        width: 40%;
+        height: 40px;
+    }
+    
+    .discount {
+        margin: 0 30px;
+    }
+
+    .discount img {
+        margin-bottom: 10px;
+        width: 20px;
+    }
+    
+    .discount p {
+        font-size: 13px;
+        margin-top: 8px;
+        font-weight: 1000;
+    }
+    
+    .content p {
+        font-weight: 1000;
+    }
 }
